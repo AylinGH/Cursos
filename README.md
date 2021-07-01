@@ -1,4 +1,4 @@
-# WearableRecyclerView Android Wear OS example
+# WearableRecyclerView Wear OS
 
 
 
