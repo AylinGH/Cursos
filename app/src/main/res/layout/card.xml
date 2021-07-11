@@ -1,0 +1,77 @@
+<androidx.wear.widget.BoxInsetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.wearable.view.CardScrollView
+        android:id="@+id/card_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D1F2EB"
+        app:layout_box="bottom">
+
+        <android.support.wearable.view.CardFrame
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="90dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:id="@+id/txtTitulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Titulo"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtDescripcion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Descripcion del Card"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp">
+
+                    <Button
+                        android:id="@+id/btnCerrar"
+                        android:layout_width="48dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="3dp"
+                        android:background="#2C3E50"
+                        android:text="Cerrar"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/btnIns"
+                        android:layout_width="50dp"
+                        android:layout_height="22dp"
+                        android:background="#2C3E50"
+                        android:layout_marginLeft="3dp"
+                        android:text="Incribirme"
+                        android:textSize="8sp" />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+        </android.support.wearable.view.CardFrame>
+
+    </android.support.wearable.view.CardScrollView>
+
+</androidx.wear.widget.BoxInsetLayout>
